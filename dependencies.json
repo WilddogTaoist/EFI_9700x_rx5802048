@@ -1,0 +1,164 @@
+[
+  {
+    "url": "https://github.com/acidanthera/OpenCorePkg/releases/download/1.0.8/OpenCore-1.0.8-DEBUG.zip",
+    "sha256": "3f5f42b85703cf2c08e8dcd9245a52fb4326c9f4ef335c75b49f516cbbe131c6",
+    "copy": [
+      {
+        "from": "X64/EFI/BOOT/BOOTx64.efi",
+        "to": "EFI/BOOT/BOOTx64.efi"
+      },
+      {
+        "from": "X64/EFI/OC/OpenCore.efi",
+        "to": "EFI/OC/OpenCore.efi"
+      },
+      {
+        "from": "X64/EFI/OC/Drivers/OpenRuntime.efi",
+        "to": "EFI/OC/Drivers/OpenRuntime.efi"
+      },
+      {
+        "from": "X64/EFI/OC/Drivers/OpenCanopy.efi",
+        "to": "EFI/OC/Drivers/OpenCanopy.efi"
+      }
+    ]
+  },
+  {
+    "url": "https://codeload.github.com/acidanthera/OcBinaryData/zip/640e7e9240938f2529e725351e1e1150dc3569db",
+    "sha256": "c72841c90873747fd47ff37d4270dac1fb5b0f8cacf7db0c9a1237ca240213ee",
+    "copy": [
+      {
+        "from": "OcBinaryData-640e7e9240938f2529e725351e1e1150dc3569db/Resources/",
+        "to": "EFI/OC/Resources/"
+      },
+      {
+        "from": "OcBinaryData-640e7e9240938f2529e725351e1e1150dc3569db/Drivers/HfsPlus.efi",
+        "to": "EFI/OC/Drivers/HfsPlus.efi"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/acidanthera/Lilu/releases/download/1.7.2/Lilu-1.7.2-RELEASE.zip",
+    "sha256": "53967d7dcfaab01023a33df2e969a89522f13d6654a6a56ac4711b62dabf3ab8",
+    "copy": [
+      {
+        "from": "Lilu.kext/",
+        "to": "EFI/OC/Kexts/Lilu.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/acidanthera/WhateverGreen/releases/download/1.7.1/WhateverGreen-1.7.1-RELEASE.zip",
+    "sha256": "1bfdd2d40290ecce237606db121cbc01d7041179f03394bd59660a2ed52e5c95",
+    "copy": [
+      {
+        "from": "WhateverGreen.kext/",
+        "to": "EFI/OC/Kexts/WhateverGreen.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/acidanthera/VirtualSMC/releases/download/1.3.8/VirtualSMC-1.3.8-RELEASE.zip",
+    "sha256": "2e29a8aaf91b4eb0bcdf5913ed17e70f5cf76531122acd4132eff7813a54de8b",
+    "copy": [
+      {
+        "from": "Kexts/VirtualSMC.kext/",
+        "to": "EFI/OC/Kexts/VirtualSMC.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/acidanthera/RestrictEvents/releases/download/1.1.6/RestrictEvents-1.1.6-RELEASE.zip",
+    "sha256": "98170dfae195ddd28b5d95e3f040125a13ca783bcb9bd1e5b8c588e217b14ee6",
+    "copy": [
+      {
+        "from": "RestrictEvents.kext/",
+        "to": "EFI/OC/Kexts/RestrictEvents.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/USBToolBox/kext/releases/download/1.2.0/USBToolBox-1.2.0-RELEASE.zip",
+    "sha256": "c315a3a5acfd496dd97d0d19b4fbd1d487103d2fd541c5651583d4c9cebcfe07",
+    "copy": [
+      {
+        "from": "USBToolBox.kext/",
+        "to": "EFI/OC/Kexts/USBToolBox.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/Mieze/LucyRTL8125Ethernet/releases/download/v.1.2.3/LucyRTL8125Ethernet-1.2.300.zip",
+    "sha256": "89ef03362baadba546418ade9614edc0469ae2483ea5380c0dcfb04941201521",
+    "copy": [
+      {
+        "from": "LucyRTL8125Ethernet.kext/",
+        "to": "EFI/OC/Kexts/LucyRTL8125Ethernet.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip",
+    "sha256": "470417c4958dd6ecb982182140a6b76cf85f847c15f1b0f6f59617d5abcc5f76",
+    "copy": [
+      {
+        "from": "AppleMCEReporterDisabler.kext/",
+        "to": "EFI/OC/Kexts/AppleMCEReporterDisabler.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/FranciumOS-org/AirPort_RTW89/releases/download/v0.7.1-BETA/AirPort_RTW89-0.7.1.zip",
+    "sha256": "5fde3f9fb64505669c1baab515fd4ea925752fe93318bd44f40efd08f486cf04",
+    "copy": [
+      {
+        "from": "AirPort_RTW89.kext/",
+        "to": "EFI/OC/Kexts/AirPort_RTW89.kext/"
+      }
+    ],
+    "skip": [
+      "AirPort_RTW89.kext/Contents/PlugIns/OwlyAirLinkBridge.kext/"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/dortania/OpenCore-Legacy-Patcher/d9604c36a432eaf243ea18659ff4d208187452d7/payloads/Kexts/Wifi/IOSkywalkFamily-v1.2.0.zip",
+    "sha256": "1e12b7ef42f55b39ea54ada97b46331220668b2c48a28656e9875c5145fe2479",
+    "copy": [
+      {
+        "from": "IOSkywalkFamily.kext/",
+        "to": "EFI/OC/Kexts/IOSkywalkFamily.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/dortania/OpenCore-Legacy-Patcher/d9604c36a432eaf243ea18659ff4d208187452d7/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip",
+    "sha256": "e681dcc76a2cd2cea4b0ad5f27a3c816055fde3cdccd890dd10a3e2c84e96d93",
+    "copy": [
+      {
+        "from": "IO80211FamilyLegacy.kext/",
+        "to": "EFI/OC/Kexts/IO80211FamilyLegacy.kext/"
+      }
+    ],
+    "skip": [
+      "IO80211FamilyLegacy.kext/Contents/PlugIns/"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/dortania/OpenCore-Legacy-Patcher/d9604c36a432eaf243ea18659ff4d208187452d7/payloads/Kexts/Acidanthera/AMFIPass-v1.4.1-RELEASE.zip",
+    "sha256": "07b266145906db41f4b13a7938fbb173ea28888cc1fa65f84417f8820adc961e",
+    "copy": [
+      {
+        "from": "AMFIPass.kext/",
+        "to": "EFI/OC/Kexts/AMFIPass.kext/"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/acidanthera/BrcmPatchRAM/releases/download/2.7.2/BrcmPatchRAM-2.7.2-RELEASE.zip",
+    "sha256": "e1c1c55347526d031a8ae2fdd1f52efa3019161e497fb38e1cfa809752f8af21",
+    "copy": [
+      {
+        "from": "BlueToolFixup.kext/",
+        "to": "EFI/OC/Kexts/BlueToolFixup.kext/"
+      }
+    ]
+  }
+]
